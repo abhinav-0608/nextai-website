@@ -391,6 +391,32 @@ article .icon {
   margin-bottom: 22vh; /* Add this to give space below Experience section */
 }
 
+/* Hover effect for links in the Services section */
+a {
+  position: relative;
+}
+
+a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -3px; /* Adjust this value to control how far the underline is below the text */
+  width: 0;
+  height: 2px; /* The thickness of the underline */
+  background-color: black; /* Change the color of the underline */
+  transition: width 0.3s ease; /* Add a smooth transition */
+}
+
+a:hover::after {
+  width: 100%; /* Expand the underline on hover */
+}
+
+#experience a {
+  text-decoration: none;
+}
+
+
+
 /* PROJECTS SECTION */
 
 #projects {
