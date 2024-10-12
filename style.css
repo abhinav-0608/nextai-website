@@ -392,23 +392,23 @@ article .icon {
 }
 
 /* Hover effect for links in the Services section */
-a {
+#experience a {
   position: relative;
 }
 
-a::after {
+#experience a::after {
   content: '';
   position: absolute;
   left: 0;
-  bottom: -3px; /* Adjust this value to control how far the underline is below the text */
+  bottom: -3px;
   width: 0;
-  height: 2px; /* The thickness of the underline */
-  background-color: black; /* Change the color of the underline */
-  transition: width 0.3s ease; /* Add a smooth transition */
+  height: 2px;
+  background-color: black;
+  transition: width 0.3s ease;
 }
 
-a:hover::after {
-  width: 100%; /* Expand the underline on hover */
+#experience a:hover::after {
+  width: 100%;
 }
 
 #experience a {
